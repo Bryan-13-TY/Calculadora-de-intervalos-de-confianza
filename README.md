@@ -16,5 +16,5 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 ![Intervalo de confianza para el parámetro (𝑃₁ - 𝑃₂), para dos muestras grandes e independientes de una distribución normal.](assets/images/case_8.png)
 ### Para una varianza poblacional (σ²)
 ![Intervalo de confianza para el parámetro (σ²), para una muestra cualquiera.](assets/images/case_9.png)
-### Para una diferencia de varianzas poblacionales (σ₁² / σ₂²)
+### Para el cociente de varianzas poblacionales (σ₁² / σ₂²)
 ![Intervalo de confianza para el parámetro (σ₁² / σ₂²), para dos muestras independientes de poblaciones normales.](assets/images/case_10.png)
