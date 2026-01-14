@@ -17,22 +17,22 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 - Parámetro a estimar (μ₁ - μ₂)
 - Para dos muestras independientes de poblaciones normales con varianzas conocidas
 - Estimador puntual (X̄₁ - X̄₂)
-<img src="assets/images/case_3.png" width="400px">
+<img src="assets/images/case_3.png" width="450px">
 
 - Parámetro a estimar (μ₁ - μ₂)
 - Para dos muestras grandes (n > 30) independientes de poblaciones normales con varianzas diferentes y desconocidas
 - Estimador puntual (X̄₁ - X̄₂)
-<img src="assets/images/case_4.png" width="400px">
+<img src="assets/images/case_4.png" width="450px">
 
 - Parámetro a estimar (μ₁ - μ₂)
 - Para dos muestras chicas independientes de poblaciones normales con varianzas diferentes y desconocidas
 - Estimador puntual (X̄₁ - X̄₂)
-<img src="assets/images/case_5.png" width="400px">
+<img src="assets/images/case_5.png" width="450px">
 
 - Parámetro a estimar (μ₁ - μ₂)
 - Para dos muestras independientes de poblaciones normales con varianzas iguales y desconocidas
 - Estimador puntual (X̄₁ - X̄₂)
-<img src="assets/images/case_6.png" width="400px">
+<img src="assets/images/case_6.png" width="450px">
 
 ### Para una proporción (𝑃)
 - Parámetro a estimar (𝑃)
