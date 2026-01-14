@@ -6,6 +6,7 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 - Parámetro a estimar (μ)
 - Distribución normal, muestra grande y varianza conocida
 - Estimador puntual (X̄)
+
 Fórmula de intervalo:
 <img src="assets/images/case_1.png" width="300px">
 
