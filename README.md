@@ -3,7 +3,14 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 
 ## Intervalos de Confianza soportados
 ### Para una media poblacional (μ)
+- Parámetro a estimar (μ)
+- Distribución normal, muestra grande y varianza conocida
+- Estimador puntual (X̄) 
 <img src="assets/images/case_1.png" width="300px">
+
+- Parámetro a estimar (μ)
+- Dsitribución normal, muestra grande o pequeña y varianza desconocida.
+- Estimador puntual (X̄)
 <img src="assets/images/case_2.png" width="300px">
 
 ### Para una diferencia de medias poblacionales (μ₁ - μ₂)
