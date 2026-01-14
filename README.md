@@ -3,6 +3,10 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 
 ## Intervalos de Confianza soportados
 ### Para una media poblacional (μ)
+<img src="assets/images/case_1.png" width="30px">
+
+
+
 ![Intervalo de confianza para el parámetro (μ), distribución normal, muestra grande y varianza conocida.](assets/images/case_1.png)
 ![Intervalo de confianza para el parámetro (μ), distribución normal, muestra grande o pequeña y varianza desconocida.](assets/images/case_2.png)
 ### Para una diferencia de medias poblacionales (μ₁ - μ₂)
