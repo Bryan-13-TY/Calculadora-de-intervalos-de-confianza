@@ -9,7 +9,7 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 <img src="assets/images/case_1.png" width="300px">
 
 - Parámetro a estimar (μ)
-- Dsitribución normal, muestra grande o pequeña y varianza desconocida.
+- Dsitribución normal, muestra grande o pequeña y varianza desconocida
 - Estimador puntual (X̄)
 <img src="assets/images/case_2.png" width="300px">
 
