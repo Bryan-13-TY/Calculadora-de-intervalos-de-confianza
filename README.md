@@ -3,7 +3,7 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 
 ## Intervalos de Confianza soportados
 ### Para una media poblacional (μ)
-<img src="assets/images/case_1.png" width="30px">
+<img src="assets/images/case_1.png" width="300px">
 
 
 
