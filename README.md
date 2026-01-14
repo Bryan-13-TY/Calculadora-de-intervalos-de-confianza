@@ -1,11 +1,12 @@
 # Calculadora-de-intervalos-de-confianza
 Calculadora de intervalos de confianza para la materia de Probabilidad y Estadística de la Escuela Superior de Cómputo (ESCOM-IPN) con la profesora Cañedo Suarez Leticia. 
 
-## Intervalos de Confianza soportados
+## Intervalos de confianza soportados
 ### Para una media poblacional (μ)
 - Parámetro a estimar (μ)
 - Distribución normal, muestra grande y varianza conocida
-- Estimador puntual (X̄) 
+- Estimador puntual (X̄)
+Fórmula de intervalo:
 <img src="assets/images/case_1.png" width="300px">
 
 - Parámetro a estimar (μ)
