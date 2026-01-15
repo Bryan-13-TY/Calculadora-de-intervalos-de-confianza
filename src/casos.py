@@ -1,9 +1,10 @@
 from src.utils import (
     BRIGHT_RED,
+    BRIGHT_YELLOW,
     RESET,
 )
 
-from src.validators import (
+from src.validaciones import (
     validar_tamano_muestra,
     validar_formato_muestra,
     validar_numero_observaciones,
@@ -11,8 +12,13 @@ from src.validators import (
     validar_desviacion_estandar_poblacional,
 )
 
-from src.warnings import (
+from src.advertencias import (
     ad_porcentaje_confianza,
+)
+
+from src.calculos import (
+    intervalo_caso_1,
+    intervalo_caso_2,
 )
 
 def media_poblacional():
@@ -60,16 +66,49 @@ def media_poblacional():
     match varianza_poblacional:
         case "si":
             try:
-                desviacion_estandar_poblacional = float(input("\nEscribe el valor de la desviación estándar poblacional (σ): "))
+                desv_estandar_poblacional = float(input("\nEscribe el valor de la desviación estándar poblacional (σ): "))
             except ValueError:
                 print(f"{BRIGHT_RED}>> ERROR{RESET} La desviación estándar pobrlacional debe ser un número")
                 return
             
-            if not validar_desviacion_estandar_poblacional(desviacion_estandar_poblacional):
+            if not validar_desviacion_estandar_poblacional(desv_estandar_poblacional):
                 print(f"{BRIGHT_RED}>> ERROR{RESET} La desviación estándar poblacional debe ser mayor o igual a cero")
                 return
+            
+            # se muestra el caso correspondiente
+            print(f"\n{BRIGHT_YELLOW}>> Los datos corresponden al caso 1{RESET}")
+            print("\n- Parámetro a estimar: μ")
+
+            if tamano_muestra >= 30: # muestra grande
+                print("- Situación: Distribución normal, muestra grande y varianza conocida")
+            else: # muestra pequeña
+                print("- Situación: Distribución normal, muestra pequeña y varianza conocida")
+
+            print("- Estimador puntual: X̄")
+            media, limite_superior, limite_inferior = intervalo_caso_1(tamano_muestra, muestra, porcentaje_confianza, desv_estandar_poblacional)
+            
+            if tamano_muestra >= 30: # muestra grande
+                ... # graficar ic para z c1
+            else: # muestra pequeña
+                ... # graficar ic para z c1
         case "no":
-            ...
+            # se muestra el caso correspondiente
+            print(f"\n{BRIGHT_YELLOW}>> Los datos corresponden al caso 2{RESET}")
+            print("\n- Parámetro a estimar: μ")
+
+            if tamano_muestra >= 30: # muestra grande
+                print("- Situación: Distribución normal, muestra grande y varianza desconocida")
+            else: # muestra pequeña
+                print("- Situación: Distribución normal, muestra pequeña y varianza desconocida")
+
+            print("- Estimador puntual: X̄")
+
+            media, limite_superior, limite_inferior, S = intervalo_caso_2(tamano_muestra, muestra, porcentaje_confianza)
+
+            if tamano_muestra >= 30: # muestra grande
+                ... # graficar ic para t c2
+            else: # muestra pequeña
+                ... # graficar ic para t c2
         case _:
             ...
 
