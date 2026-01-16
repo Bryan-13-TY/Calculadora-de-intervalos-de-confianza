@@ -16,12 +16,9 @@ from src.advertencias import (
     ad_porcentaje_confianza,
 )
 
-from src.calculos import (
-    intervalo_caso_1,
-    intervalo_caso_2,
-)
+from src.calculos import *
 
-def media_poblacional():
+def media_poblacional() -> None:
     """
     Docstring for media_poblacional
 
@@ -113,21 +110,64 @@ def media_poblacional():
             ...
 
 
-def dif_medias_poblacionales():
+def dif_medias_poblacionales() -> None:
+    """
+    Docstring for dif_medias_poblacionales
+
+    Estima una diferencia de medias poblacionales.
+
+    Considera las siguientes situaciones:
+    - Para dos muestras independientes de poblaciones normales con varianzas conocidas.
+    - Para dos muestras grandes (n > 30) independientes de poblaciones normales con varianzas diferentes y desconocidas.
+    - Para dos muestras chicas independientes de poblaciones normales con varianzas diferentes y desconocidas.
+    - Para dos muestras independientes de poblaciones normales con varianzas iguales y desconocidas.
+    """
     ...
 
 
-def proporcion():
+def proporcion() -> None:
+    """
+    Docstring for proporcion
+
+    Estima una proporción.
+
+    Considera la siguiente situación:
+    - Para una muestra grande con 𝑃 pequeña.
+    """
     ...
 
 
-def dif_proporciones():
+def dif_proporciones() -> None:
+    """
+    Docstring for dif_proporciones
+
+    Estima una diferencia de proporciones.
+
+    Considera la siguiente situación:
+    - Para dos muestras grandes e independientes de una distribución normal.
+    """
     ...
 
 
-def varianza_poblacional():
+def varianza_poblacional() -> None:
+    """
+    Docstring for varianza_poblacional
+
+    Estima una varianza poblacional.
+
+    Considera la siguiente situación:
+    - Para una muestra cualquiera.
+    """
     ...
 
 
-def coc_varianzas_poblacionales():
+def coc_varianzas_poblacionales() -> None:
+    """
+    Docstring for coc_varianzas_poblacionales
+
+    Estima un cociente de varianzas poblacionales.
+
+    Considera la siguiente situación:
+    - Para dos muestras independientes de poblaciones normales.
+    """
     ...

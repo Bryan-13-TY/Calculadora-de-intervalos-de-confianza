@@ -1,17 +1,6 @@
-"""
-Docstring for Programas remasterizados.En Python.calculadora de intervalos.main
-
-Menú de la calculadora donde se elije el parámetro a estimar.
-
-Author: García Escamilla Bryan Alexis
-Date: 06/01/2026
-Version: 1.0
-"""
-
 from src.utils import (
-    clear_console,
-    wait_key,
-    show_info,
+    limpiar_consola,
+    esperar_enter,
 )
 
 from config.config import (
@@ -22,10 +11,9 @@ from config.config import (
     INFO_DIF_PROPORCIONES,
     INFO_VARIANZA_POBLACIONAL,
     INFO_COC_VARIANZAS_POBLACIONALES,
-    TEXT_NO_VALIDO,
 )
 
-from src.cases import (
+from src.casos import (
     media_poblacional,
     dif_medias_poblacionales,
     proporcion,
@@ -34,50 +22,53 @@ from src.cases import (
     coc_varianzas_poblacionales,
 )
 
+from src.errores import (
+    OPCION_NO_VALIDA,
+)
+
 def main() -> None:
-    clear_console()
+    limpiar_consola()
 
     while True:
         print(MENU_PRINCIPAL)
-        
         param = input("Opción: ").strip().lower()
         match param:
             case "1":
-                show_info(INFO_MEDIA_POBLACIONAL)
+                print(INFO_MEDIA_POBLACIONAL)
                 media_poblacional()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "2":
-                show_info(INFO_DIF_MEDIAS_POBLACIONALES)
+                print(INFO_DIF_MEDIAS_POBLACIONALES)
                 dif_medias_poblacionales()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "3":
-                show_info(INFO_PROPORCION)
+                print(INFO_PROPORCION)
                 proporcion()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "4":
-                show_info(INFO_DIF_PROPORCIONES)
+                print(INFO_DIF_PROPORCIONES)
                 dif_proporciones()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "5":
-                show_info(INFO_VARIANZA_POBLACIONAL)
+                print(INFO_VARIANZA_POBLACIONAL)
                 varianza_poblacional()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "6":
-                show_info(INFO_COC_VARIANZAS_POBLACIONALES)
+                print(INFO_COC_VARIANZAS_POBLACIONALES)
                 coc_varianzas_poblacionales()
-                wait_key()
-                clear_console()
+                esperar_enter()
+                limpiar_consola()
             case "salir":
                 break
             case _:
-                print(TEXT_NO_VALIDO)
-                wait_key()
-                clear_console()
+                print(OPCION_NO_VALIDA)
+                esperar_enter()
+                limpiar_consola()
 
 if __name__ == "__main__":
     main()

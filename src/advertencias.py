@@ -4,12 +4,6 @@ from src.utils import (
 )
 
 def ad_porcentaje_confianza(porcentaje_confianza: int):
-    """
-    Docstring for ad_porcentaje_confianza
-    
-    :param porcentaje_confianza: Description
-    :type porcentaje_confianza: int
-    """
     if porcentaje_confianza < 90:
         print(f"{BRIGHT_YELLOW}>> ADVERTENCIA{RESET} Usar un nivel de confianza menor a 90% implica un mayor riesgo de que el intervalo no contenga el valor real. Se recomienda 90% o más")
     

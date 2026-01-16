@@ -1,21 +1,11 @@
-"""
-Docstring for Programas remasterizados.En Python.calculadora de intervalos.config.config
-
-Constantes para el programa.
-
-Author: García Escamilla Bryan Alexis
-Date: 06/01/2026
-Version: 1.0
-"""
-
 from pathlib import Path
 from src.utils import (
     BRIGHT_RED,
     RESET,
 )
 
-# <====== imagenes ======>
-BASE_DIR = Path(__file__).resolve().parent.parent # directorio base de proyecto
+# ====== imagenes ======
+BASE_DIR = Path(__file__).resolve().parent.parent
 IMAGES_DIR = BASE_DIR / "assets" / "images"
 CASE_1 = IMAGES_DIR / "case_1.png"
 CASE_2 = IMAGES_DIR / "case_2.png"
@@ -28,7 +18,7 @@ CASE_8 = IMAGES_DIR / "case_8.png"
 CASE_9 = IMAGES_DIR / "case_9.png"
 CASE_10 = IMAGES_DIR / "case_10.png"
 
-# <====== menú e información ======>
+# ====== menú e información sobre los casos ======
 MENU_PRINCIPAL = """
 /*---------------------------------------.
 | CALCULADORA DE INTERVALOS DE CONFIANZA |
@@ -111,5 +101,3 @@ INFO_COC_VARIANZAS_POBLACIONALES = """
 - (n₁ y n₂) deben ser números enteros.
 - Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
 """
-
-TEXT_NO_VALIDO = f"{BRIGHT_RED}>> ERROR{RESET} La opción no es valida"
