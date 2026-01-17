@@ -7,16 +7,16 @@ from src.utils import (
 # ====== imagenes ======
 BASE_DIR = Path(__file__).resolve().parent.parent
 IMAGES_DIR = BASE_DIR / "assets" / "images"
-CASE_1 = IMAGES_DIR / "case_1.png"
-CASE_2 = IMAGES_DIR / "case_2.png"
-CASE_3 = IMAGES_DIR / "case_3.png"
-CASE_4 = IMAGES_DIR / "case_4.png"
-CASE_5 = IMAGES_DIR / "case_5.png"
-CASE_6 = IMAGES_DIR / "case_6.png"
-CASE_7 = IMAGES_DIR / "case_7.png"
-CASE_8 = IMAGES_DIR / "case_8.png"
-CASE_9 = IMAGES_DIR / "case_9.png"
-CASE_10 = IMAGES_DIR / "case_10.png"
+IMAGE_INTERVAL_CASE_1 = IMAGES_DIR / "interval_case_1.png"
+IMAGE_INTERVAL_CASE_2 = IMAGES_DIR / "interval_case_2.png"
+IMAGE_INTERVAL_CASE_3 = IMAGES_DIR / "interval_case_3.png"
+IMAGE_INTERVAL_CASE_4 = IMAGES_DIR / "interval_case_4.png"
+IMAGE_INTERVAL_CASE_5 = IMAGES_DIR / "interval_case_5.png"
+IMAGE_INTERVAL_CASE_6 = IMAGES_DIR / "interval_case_6.png"
+IMAGE_INTERVAL_CASE_7 = IMAGES_DIR / "interval_case_7.png"
+IMAGE_INTERVAL_CASE_8 = IMAGES_DIR / "interval_case_8.png"
+IMAGE_INTERVAL_CASE_9 = IMAGES_DIR / "interval_case_9.png"
+IMAGE_INTERVAL_CASE_10 = IMAGES_DIR / "interval_case_10.png"
 
 # ====== menú e información sobre los casos ======
 MENU_PRINCIPAL = """
