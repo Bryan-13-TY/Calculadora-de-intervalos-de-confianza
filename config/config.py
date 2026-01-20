@@ -1,8 +1,4 @@
 from pathlib import Path
-from src.utils import (
-    BRIGHT_RED,
-    RESET,
-)
 
 # ====== imagenes ======
 BASE_DIR = Path(__file__).resolve().parent.parent
