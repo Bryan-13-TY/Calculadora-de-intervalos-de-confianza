@@ -57,3 +57,51 @@ Calculadora de intervalos de confianza para la materia de Probabilidad y Estadí
 - Para dos muestras independientes de poblaciones normales
 - Estimador puntual (𝑠₁² / 𝑠₂²)
 <img src="assets/images/interval_case_10.png" width="300px">
+
+---
+
+## 📁 Estructura de la calculadora
+```text
+Calculadora-de-intervalos-de-confianza/
+├── assets/
+│   └── images/
+│       ├── interval_case_1.png
+│       ├── interval_case_10.png
+│       ├── interval_case_2.png
+│       ├── interval_case_3.png
+│       ├── interval_case_4.png
+│       ├── interval_case_5.png
+│       ├── interval_case_6.png
+│       ├── interval_case_7.png
+│       ├── interval_case_8.png
+│       └── interval_case_9.png
+├── casos/
+│   ├── coc_varianzas.py
+│   ├── dif_medias.py
+│   ├── dif_proporciones.py
+│   ├── media.py
+│   ├── proporcion.py
+│   ├── varianza.py
+│   ├── __init__.py
+├── config/
+│   ├── config.py
+│   └── __init__.py
+├── docs/
+│   └── formulario_Intervalos_de_confianza.pdf
+├── src
+│   ├── advertencias.py
+│   ├── errores.py
+│   ├── utils.py
+│   ├── validaciones.py
+│   ├── __init__.py 
+│   ├── services
+│   │   ├── calculos.py
+│   │   └── __init__.py 
+│   └── visualization
+│       ├── graficas.py
+│       └── __init__.py
+├── .gitignore
+├── main.py
+├── mapa.txt
+└── README.md   
+```
