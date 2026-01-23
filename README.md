@@ -108,7 +108,7 @@ Calculadora-de-intervalos-de-confianza/
 ---
 
 ## 🚀 Uso de la calculadora
-Desde la raíz del proyecto
+Desde la raíz del proyecto:
 ```
 py main.py
 ```
