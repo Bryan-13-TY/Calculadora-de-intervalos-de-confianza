@@ -1,3 +1,7 @@
+"""
+En este módulo se definen las constantes para darle color al texto de
+la calculadora así como algunas funciones genéricas.
+"""
 import os
 import msvcrt
 
