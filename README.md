@@ -104,3 +104,11 @@ Calculadora-de-intervalos-de-confianza/
 ├── main.py
 └── README.md   
 ```
+
+---
+
+## 🚀 Uso de la calculadora
+Desde la raíz del proyecto
+```
+py main.py
+```
