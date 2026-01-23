@@ -102,6 +102,5 @@ Calculadora-de-intervalos-de-confianza/
 │       └── __init__.py
 ├── .gitignore
 ├── main.py
-├── mapa.txt
 └── README.md   
 ```
