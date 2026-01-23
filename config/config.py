@@ -1,3 +1,7 @@
+"""
+En este módulo se definen las constantes necesarias para la
+configuración de la calculadora de intervalos de confianza.
+"""
 from pathlib import Path
 
 from src.utils import (
@@ -6,7 +10,6 @@ from src.utils import (
     RESET,
 )
 
-# ====== imagenes ======
 BASE_DIR = Path(__file__).resolve().parent.parent
 IMAGES_DIR = BASE_DIR / "assets" / "images"
 IMAGE_INTERVAL_CASE_1 = IMAGES_DIR / "interval_case_1.png"
@@ -20,7 +23,6 @@ IMAGE_INTERVAL_CASE_8 = IMAGES_DIR / "interval_case_8.png"
 IMAGE_INTERVAL_CASE_9 = IMAGES_DIR / "interval_case_9.png"
 IMAGE_INTERVAL_CASE_10 = IMAGES_DIR / "interval_case_10.png"
 
-# ====== menú e información sobre los casos ======
 MENU_PRINCIPAL = f"""{BRIGHT_YELLOW}
 /*---------------------------------------.
 | CALCULADORA DE INTERVALOS DE CONFIANZA |
@@ -43,10 +45,12 @@ INFO_MEDIA_POBLACIONAL = f"""{BRIGHT_MAGENTA}
 | Para una media poblacional (μ) |
 `-------------------------------*/{RESET}
 
-- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ) para calcular la media muestral (X̄).
+- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ)
+para calcular la media muestral (X̄).
 - El tamaño de la muestra (n) debe coincidir con la cantidad de muestras ingresadas.
 - (n) debe ser un número entero.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
 
 INFO_DIF_MEDIAS_POBLACIONALES = f"""{BRIGHT_MAGENTA}
@@ -54,10 +58,13 @@ INFO_DIF_MEDIAS_POBLACIONALES = f"""{BRIGHT_MAGENTA}
 | Para una diferencia de medias poblacionales (μ₁ - μ₂) |
 `------------------------------------------------------*/{RESET}
 
-- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ) para calcular las medias muestrales (X̄₁ y X̄₂) respectivamente.
-- Los tamaños de las muestras (n₁ y n₂) deben coincidir con la cantidad de muestras ingresadas respectivamente.
+- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ) para calcular
+las medias muestrales (X̄₁ y X̄₂) respectivamente.
+- Los tamaños de las muestras (n₁ y n₂) deben coincidir con la cantidad de muestras
+ingresadas respectivamente.
 - (n₁ y n₂) deben ser números enteros.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
 
 INFO_PROPORCION = f"""{BRIGHT_MAGENTA}
@@ -68,7 +75,8 @@ INFO_PROPORCION = f"""{BRIGHT_MAGENTA}
 - El número de éxitos (X) no debe ser mayor que el tamaño de la muestra (N).
 - El tamaño de la muestra no debe ser menor que el número de éxitos.
 - Tanto (X) como (N) deben ser números enteros.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
 
 INFO_DIF_PROPORCIONES = f"""{BRIGHT_MAGENTA}
@@ -76,10 +84,13 @@ INFO_DIF_PROPORCIONES = f"""{BRIGHT_MAGENTA}
 | Para una diferencia de proporciones (𝑃₁ - 𝑃₂) |
 `----------------------------------------------*/{RESET}
 
-- El número de éxitos (X₁ y X₂) no deben ser mayores que los tamaños de la muestra (N₁ y N₂) respectivamente.
-- Los tamaños de las muestras (N₁ y N₂) no deben ser menores que el número de éxitos (X₁ y X₂) respectivamente.
+- El número de éxitos (X₁ y X₂) no deben ser mayores que los tamaños de la
+muestra (N₁ y N₂) respectivamente.
+- Los tamaños de las muestras (N₁ y N₂) no deben ser menores que el número
+de éxitos (X₁ y X₂) respectivamente.
 - Tanto (X₁ y X₂) como (N₁ y N₂) deben ser números enteros.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
 
 INFO_VARIANZA_POBLACIONAL = f"""{BRIGHT_MAGENTA}
@@ -87,10 +98,12 @@ INFO_VARIANZA_POBLACIONAL = f"""{BRIGHT_MAGENTA}
 | Para una varianza poblacional (σ²) | 
 `-----------------------------------*/{RESET}
 
-- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ) para calcular la media muestral (X̄).
+- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ)
+para calcular la media muestral (X̄).
 - El tamaño de la muestra (n) debe coincidir con la cantidad de muestras ingresadas.
 - (n) debe ser un número entero.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
 
 INFO_COC_VARIANZAS_POBLACIONALES = f"""{BRIGHT_MAGENTA}
@@ -98,8 +111,11 @@ INFO_COC_VARIANZAS_POBLACIONALES = f"""{BRIGHT_MAGENTA}
 | Para el cociente de varianzas poblacionales (σ₁² / σ₂²) |
 `--------------------------------------------------------*/{RESET}
 
-- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ) para calcular las medias muestrales (X̄₁ y X̄₂) respectivamente.
-- Los tamaños de las muestras (n₁ y n₂) deben coincidir con la cantidad de muestras ingresadas respectivamente.
+- Ingresa cada una de las muestras separadas por un espacio (x₁ x₂ ... xₙ)
+para calcular las medias muestrales (X̄₁ y X̄₂) respectivamente.
+- Los tamaños de las muestras (n₁ y n₂) deben coincidir con la cantidad de
+muestras ingresadas respectivamente.
 - (n₁ y n₂) deben ser números enteros.
-- Se recomienda que el porcentaje de confianza este entre 90% y 99%. Si este no se conoce usar 95%.
+- Se recomienda que el porcentaje de confianza este entre 90% y 99%.
+Si este no se conoce usar 95%.
 """
