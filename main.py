@@ -1,32 +1,42 @@
-from src.utils import (
-    limpiar_consola,
+"""
+Author: García Escamilla Bryan Alexis
+Versión: 1.2
+
+En este módulo se presenta un menú interactivo en consola que le
+permite al usuario elegir algún caso de estimación e intervalos de
+confianza para medias, varianzas y proporciones poblaciones.
+
+Uso:
+    py main.py
+"""
+from src import (
     esperar_enter,
+    limpiar_consola,
+    ERR_OPCION_NO_VALIDA,
+    mostrar_error,
 )
 
-from config.config import (
-    MENU_PRINCIPAL,
-    INFO_MEDIA_POBLACIONAL,
-    INFO_DIF_MEDIAS_POBLACIONALES,
-    INFO_PROPORCION,
-    INFO_DIF_PROPORCIONES,
-    INFO_VARIANZA_POBLACIONAL,
+from config import (
     INFO_COC_VARIANZAS_POBLACIONALES,
+    INFO_DIF_MEDIAS_POBLACIONALES,
+    INFO_DIF_PROPORCIONES,
+    INFO_MEDIA_POBLACIONAL,
+    INFO_PROPORCION,
+    INFO_VARIANZA_POBLACIONAL,
+    MENU_PRINCIPAL,
 )
 
-from src.casos import (
-    media_poblacional,
-    dif_medias_poblacionales,
-    proporcion,
-    dif_proporciones,
-    varianza_poblacional,
-    coc_varianzas_poblacionales,
-)
-
-from src.errores import (
-    OPCION_NO_VALIDA,
+from casos import (
+    intervalo_coc_varianzas_poblacionales,
+    intervalo_dif_medias_poblacionales,
+    intervalo_dif_proporciones,
+    intervalo_media_poblacional,
+    intervalo_proporcion,
+    intervalo_varianza_poblacional,
 )
 
 def main() -> None:
+    """Ejecuta el menú principal del programa."""
     limpiar_consola()
 
     while True:
@@ -35,38 +45,38 @@ def main() -> None:
         match param:
             case "1":
                 print(INFO_MEDIA_POBLACIONAL)
-                media_poblacional()
+                intervalo_media_poblacional()
                 esperar_enter()
                 limpiar_consola()
             case "2":
                 print(INFO_DIF_MEDIAS_POBLACIONALES)
-                dif_medias_poblacionales()
+                intervalo_dif_medias_poblacionales()
                 esperar_enter()
                 limpiar_consola()
             case "3":
                 print(INFO_PROPORCION)
-                proporcion()
+                intervalo_proporcion()
                 esperar_enter()
                 limpiar_consola()
             case "4":
                 print(INFO_DIF_PROPORCIONES)
-                dif_proporciones()
+                intervalo_dif_proporciones()
                 esperar_enter()
                 limpiar_consola()
             case "5":
                 print(INFO_VARIANZA_POBLACIONAL)
-                varianza_poblacional()
+                intervalo_varianza_poblacional()
                 esperar_enter()
                 limpiar_consola()
             case "6":
                 print(INFO_COC_VARIANZAS_POBLACIONALES)
-                coc_varianzas_poblacionales()
+                intervalo_coc_varianzas_poblacionales()
                 esperar_enter()
                 limpiar_consola()
             case "salir":
                 break
             case _:
-                print(OPCION_NO_VALIDA)
+                mostrar_error(ERR_OPCION_NO_VALIDA)
                 esperar_enter()
                 limpiar_consola()
 
