@@ -88,16 +88,16 @@ Calculadora-de-intervalos-de-confianza/
 │   └── __init__.py
 ├── docs/
 │   └── formulario_Intervalos_de_confianza.pdf
-├── src
+├── src/
 │   ├── advertencias.py
 │   ├── errores.py
 │   ├── utils.py
 │   ├── validaciones.py
 │   ├── __init__.py 
-│   ├── services
+│   ├── services/
 │   │   ├── calculos.py
 │   │   └── __init__.py 
-│   └── visualization
+│   └── visualization/
 │       ├── graficas.py
 │       └── __init__.py
 ├── .gitignore
